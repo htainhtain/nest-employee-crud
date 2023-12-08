@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "0cfa206a-6b04-4658-8076-222703b6e486",
+		"name": "employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12749357",
+		"_collection_link": "https://dark-water-772335-1.postman.co/workspace/3c39061f-55d9-44c7-9c30-a30dee0f3ca0/collection/12749357-0cfa206a-6b04-4658-8076-222703b6e486?action=share&source=collection_link&creator=12749357"
+	},
+	"item": [
+		{
+			"name": "Get all employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/employee",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get employee by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/employee/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"employee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"test 3\",\n    \"last_name\": \"test 3\",\n    \"department\": \"sales 3\",\n    \"salary\": \"1000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/employee",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"test 2\",\n    \"last_name\": \"test\",\n    \"department\": \"sales\",\n    \"salary\": \"1000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/employee/2",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"employee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an employee Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/employee/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"employee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
